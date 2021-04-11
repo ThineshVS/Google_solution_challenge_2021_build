@@ -6,7 +6,7 @@ After download the file as such, install Visual studio code(ide)
 
 step1: open the "login_page.py" file in the python ide
 
-Step2: install python3, html,css in your ide(most preferably use *Visual Studio Code)
+Step2: install python3, html,css,javascript in your ide(most preferably use *Visual Studio Code)
 *if you are using Visual studio code, click on extensions(in top left) and type the packages names and click install.
 
 Step3: and install the following dependies using- pip install "dependies name" (use cmd for installing dependies or in-built terminal in Visual studio code )
