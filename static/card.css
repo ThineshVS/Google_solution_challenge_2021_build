@@ -1,0 +1,83 @@
+.cards {
+  position: absolute;
+  left: 55%;
+  top: 15%;
+  height: 75vh;
+  overflow: scroll;
+  overflow-y: scroll;
+}
+
+#card {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 700px;
+  border-radius: 10px;
+  margin: 10px 0 10px 0;
+}
+#sector_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  width: 15%;
+}
+
+#sector_3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#sector_1 div {
+  margin: 15px;
+}
+
+#sector_2 h3 {
+  margin: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#sector_3 div {
+  margin: 15px;
+}
+
+.back_color {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#sector_3 button {
+  color: black;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 0;
+  font-size: 23px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#sector_3 button:focus {
+  border: 0;
+  outline: none;
+}
+#sector_3 button:active {
+  background-color: black;
+  color: green;
+}
+#sector_1 h3 {
+  margin: 2px;
+}
+
+#but_1,
+#but_2 {
+  visibility: hidden;
+}
+.but {
+  background: transparent;
+  border: none;
+  align-content: center;
+  font-size: 20px;
+}
+.but:focus {
+  outline: none;
+}

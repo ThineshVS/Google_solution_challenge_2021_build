@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width,initial-scale=0.1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename= 'page.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename= 'card.css')}}"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="header">
+      <nav>
+        <a href="page.html"
+          ><img src="{{ url_for('static',filename= 'wp.jpg')}}"
+        /></a>
+      </nav>
+      <div class="text-box">
+        <h1>GROBAGE</h1>
+      </div>
+      <div class="req">
+        <h2>Track</h2>
+      </div>
+
+      <div class="cards">
+        {% for i in data %}
+        <div id="card">
+          <div id="sector_1">
+            <div id="part1">
+              <h3 class="back_color">Request ID:</h3>
+              <h3 class="back_color">Name: {{ i['Name'] }}</h3>
+              <h3 class="back_color">Service: {{ i['Service'] }}</h3>
+            </div>
+            <img src="{{ url_for('static',filename= 'webapp8.png')}}" />
+            <div id="part3">
+              <h3 class="back_color">Location: {{ i['Area'] }}</h3>
+              <h3 class="back_color">Contact: 9876543210</h3>
+              <h3 class="back_color">
+                <button class="but" onclick="/get_img/{{ i['imageid'] }}">
+                  Get Photo
+                </button>
+              </h3>
+            </div>
+          </div>
+
+          <div id="sector_3">
+            <div id="but_1">
+              <button>Contact</button>
+            </div>
+            <div id="but_2">
+              <button>Accept</button>
+            </div>
+            <div id="but_3">
+              <button onclick="window.open('{{ i['location'] }}')">
+                View Location on map
+              </button>
+            </div>
+          </div>
+        </div>
+        {%endfor%}
+      </div>
+    </section>
+  </body>
+</html>

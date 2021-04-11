@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.cards {
+  border-radius: 30px;
+  color: black;
+  position: absolute;
+  left: 60%;
+  top: 35%;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 3, 0.3), rgba(4, 9, 3, 0.3)),
+    url(leaves.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin: none;
+}
+.form-group {
+  color: aliceblue;
+}
+form-control-file {
+  color: aqua;
+  background-color: aqua;
+}
+
+.form-grou {
+  color: white;
+}
+.text-box {
+  width: 80%;
+  align-content: center;
+  position: absolute;
+  color: aliceblue;
+  top: 3%;
+  left: 17%;
+  font-size: 70px;
+}
+.req {
+  width: 50%;
+  align-content: center;
+  position: absolute;
+  color: white;
+  top: 17%;
+  left: 39%;
+  font-size: 20px;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 130px;
+}
+.reqq {
+  width: 100%;
+  align-content: center;
+  position: absolute;
+  color: #bebebe;
+  top: 420%;
+  right: 20%;
+  font-size: 20px;
+}
